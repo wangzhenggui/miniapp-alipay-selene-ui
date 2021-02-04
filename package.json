@@ -1,0 +1,24 @@
+{
+  "name": "miniapp-alipay-selene-ui",
+  "version": "1.0.0",
+  "description": "支付宝小程序组件库",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangzhenggui/miniapp-alipay-selene-ui.git"
+  },
+  "files": [
+    "es"
+  ],
+  "keywords": [
+    "custom-component",
+    "mini-program",
+    "alipay"
+  ],
+  "devDependencies": {
+    "rc-tools": "6.x"
+  },
+  "scripts": {
+    "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js",
+    "pub": "git push origin && npm run build && npm publish"
+  }
+}
